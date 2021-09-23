@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+#include<fstream>
+#include<sstream>
+#include<vector>
+using namespace std;
+
+string key_word[32]={
+		"auto","break","case","char","const","continue","default","double",
+		"do","else","enum","extern","float","for","goto","if","int","long",
+		"register","return","short","signed","sizeof","static","struct",
+		"switch","typedef","union","unsigned","void","volatile","while"
+	}; 
+
+vector<int> Case_num;
+int total_num=0;
+int switch_num=0;
+int case_num=0;
+int ifelse_num=0;
+int if_elseif_else_num=0;
+int stack[1000]={0};
+int top=-1;
